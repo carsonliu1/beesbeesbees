@@ -5,5 +5,5 @@ var Grub = function() {
 };
 
 Grub.prototype.eat = function() {
-  console.log('consumed' + this.food)
+  return 'consumed' + this.food
 }

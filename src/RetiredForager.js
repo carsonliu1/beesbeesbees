@@ -14,9 +14,9 @@ RetiredForagerBee.prototype.forage = function() {
 }
 
 RetiredForagerBee.prototype.eat = function() {
-  Grub.eat()
+  Grub.prototype.eat.call(this)
 }
 
 RetiredForagerBee.prototype.gamble = function() {
-  this.treasureChest.push('💰')
+  ForagerBee.prototype.forage.call(this)
 }

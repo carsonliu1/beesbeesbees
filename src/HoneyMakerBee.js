@@ -9,7 +9,7 @@ HoneyMakerBee.prototype = Object.create(Bee)
 HoneyMakerBee.prototype.constructor = HoneyMakerBee
 
 HoneyMakerBee.prototype.eat = function() {
-  Bee.eat()
+  Bee.prototype.eat.call(this)
 }
 
 HoneyMakerBee.prototype.makeHoney = function() {

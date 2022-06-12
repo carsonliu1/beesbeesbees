@@ -10,7 +10,7 @@ ForagerBee.prototype = Object.create(Bee)
 ForagerBee.prototype.constructor = ForagerBee
 
 ForagerBee.prototype.eat = function () {
-  Grub.eat()
+  Grub.prototype.eat.call(this)
 }
 
 ForagerBee.prototype.forage = function () {

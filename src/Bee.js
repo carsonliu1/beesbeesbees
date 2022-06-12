@@ -9,6 +9,6 @@ Bee.prototype = Object.create(Grub)
 Bee.prototype.constructor = Bee
 
 Bee.prototype.eat = function() {
-  Grub.eat()
+  Grub.prototype.eat.call(this)
 }
 
